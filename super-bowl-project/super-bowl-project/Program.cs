@@ -11,11 +11,55 @@ namespace super_bowl_project
     {
         static void Main(string[] args)
         {
-            welcome();
+            List<SuperBowl> superBowls = new List<SuperBowl>();
+            SuperBowl aSuperBowl;
+            const string SUPERFILEPATH = @"C:\schooldata\semester3\AdvancedProgramming\Project-2\Project2\super-bowl-project\super-bowl-project\Super_Bowl_Project.csv";
+            const char DELIM = ',';
+            string[] arrayOfFields;
+            string filePath;
+
+            welcome(out filePath); //out filePath
+
+            try
+            {
+                FileStream superbowlFile = new FileStream(SUPERFILEPATH, FileMode.Open, FileAccess.Read);
+                StreamReader read = new StreamReader(superbowlFile);
+
+                FileStream outFile = new FileStream(filePath, FileMode.Create, FileAccess.Write); // create new file
+                StreamWriter writer = new StreamWriter(outFile);
+
+                while (!read.EndOfStream)
+                {                                                                      //each array element holds a field for a row/record from the .csv file
+                    arrayOfFields = read.ReadLine().Split(DELIM); // split the fields
+                    aSuperBowl = new SuperBowl(arrayOfFields[0], arrayOfFields[1], arrayOfFields[2], arrayOfFields[3], arrayOfFields[4],
+                                               arrayOfFields[5], arrayOfFields[6], arrayOfFields[7], arrayOfFields[8], arrayOfFields[9],
+                                               arrayOfFields[10], arrayOfFields[11], arrayOfFields[12], arrayOfFields[13], arrayOfFields[14]);
+                                                        // each field corresponds to a property within the SuperBowl class respectively
+                    // Console.WriteLine(aSuperBowl);
+                    superBowls.Add(aSuperBowl);
+
+
+
+                    writer.WriteLine(aSuperBowl.Date + DELIM + aSuperBowl.SuperBowlNum + DELIM + aSuperBowl.Winner);
+
+                }
+                writer.Close();
+                outFile.Close();
+                read.Close();
+                superbowlFile.Close();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+
         }
 
-        public static void welcome()
+        public static void welcome(out string filePath) // gets the desired file path //
         {
+
+
             Console.WriteLine("Welcome, this program is designed to manipulate and summarize data from a corresponding " +
                 "Excel spreadsheet (.csv file).");
             Console.WriteLine("The data being used is from past NFL Super Bowls. (I 1967 through LI 2017)");
@@ -31,6 +75,8 @@ namespace super_bowl_project
                               "\nWhich team(s) won the most Super Bowls?" +
                               "\nWhich team(s) lost the most Super Bowls?" +
                               "\nWhat is the average attendance of all Super Bowls?");
+            Console.WriteLine("\nPlease enter in the desired file path, include the file name after the last backslash: ");
+            filePath = Console.ReadLine();
 
         }
     }

@@ -1,0 +1,52 @@
+Date,SB,Winner
+15-Jan-67,I,Green Bay Packers
+14-Jan-68,II,Green Bay Packers
+12-Jan-69,III,New York Jets
+11-Jan-70,IV,Kansas City Chiefs
+17-Jan-71,V,Baltimore Colts
+16-Jan-72,VI,Dallas Cowboys
+14-Jan-73,VII,Miami Dolphins
+13-Jan-74,VIII,Miami Dolphins
+12-Jan-75,IX,Pittsburgh Steelers
+18-Jan-76,X,Pittsburgh Steelers
+9-Jan-77,XI,Oakland Raiders
+15-Jan-78,XII,Dallas Cowboys
+21-Jan-79,XIII,Pittsburgh Steelers
+20-Jan-80,XIV,Pittsburgh Steelers
+25-Jan-81,XV,Oakland Raiders
+24-Jan-82,XVI,San Francisco 49ers
+30-Jan-83,XVII,Washington Redskins
+22-Jan-84,XVIII,Los Angeles Raiders
+20-Jan-85,XIX,San Francisco 49ers
+26-Jan-86,XX,Chicago Bears
+25-Jan-87,XXI,New York Giants
+31-Jan-88,XXII,Washington Redskins
+22-Jan-89,XXIII,San Francisco 49ers
+28-Jan-90,XXIV,San Francisco 49ers
+27-Jan-91,XXV,New York Giants
+26-Jan-92,XXVI,Washington Redskins
+31-Jan-93,XXVII,Dallas Cowboys
+30-Jan-94,XXVIII,Dallas Cowboys
+29-Jan-95,XXIX,San Francisco 49ers
+28-Jan-96,XXX,Dallas Cowboys
+26-Jan-97,XXXI,Green Bay Packers
+25-Jan-98,XXXII,Denver Broncos
+31-Jan-99,XXXIII,Denver Broncos
+30-Jan-00,XXXIV,St. Louis Rams
+28-Jan-01,XXXV,Baltimore Ravens
+3-Feb-02,XXXVI,New England Patriots
+26-Jan-03,XXXVII,Tampa Bay Buccaneers
+1-Feb-04,XXXVIII,New England Patriots
+6-Feb-05,XXXIX,New England Patriots
+5-Feb-06,XL,Pittsburgh Steelers
+4-Feb-07,XLI,Indianapolis Colts
+3-Feb-08,XLII,New York Giants
+1-Feb-09,XLIII,Pittsburgh Steelers
+7-Feb-10,XLIV,New Orleans Saints
+6-Feb-11,XLV,Green Bay Packers
+5-Feb-12,XLVI,New York Giants
+3-Feb-13,XLVII,Baltimore Ravens
+2-Feb-14,XLVIII,Seattle Seahawks
+1-Feb-15,XLIX,New England Patriots
+7-Feb-16,L ,Denver Broncos
+5-Feb-17,LI ,New England Patriots
