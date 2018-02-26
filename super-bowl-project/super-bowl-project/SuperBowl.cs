@@ -12,7 +12,6 @@ namespace super_bowl_project
         public string Date { get; set; }
         public string SuperBowlNum { get; set; }
         public int Attendance { get; set; }
-
         // Winners' properties =)
         public string QBWinner { get; set; }
         public string CoachWinner { get; set; }
