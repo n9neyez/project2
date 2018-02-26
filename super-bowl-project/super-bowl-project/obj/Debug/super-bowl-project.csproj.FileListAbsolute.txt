@@ -1,0 +1,6 @@
+C:\schooldata\semester3\AdvancedProgramming\Project-2\Project2\super-bowl-project\super-bowl-project\bin\Debug\super-bowl-project.exe.config
+C:\schooldata\semester3\AdvancedProgramming\Project-2\Project2\super-bowl-project\super-bowl-project\bin\Debug\super-bowl-project.exe
+C:\schooldata\semester3\AdvancedProgramming\Project-2\Project2\super-bowl-project\super-bowl-project\bin\Debug\super-bowl-project.pdb
+C:\schooldata\semester3\AdvancedProgramming\Project-2\Project2\super-bowl-project\super-bowl-project\obj\Debug\super-bowl-project.csproj.CoreCompileInputs.cache
+C:\schooldata\semester3\AdvancedProgramming\Project-2\Project2\super-bowl-project\super-bowl-project\obj\Debug\super-bowl-project.exe
+C:\schooldata\semester3\AdvancedProgramming\Project-2\Project2\super-bowl-project\super-bowl-project\obj\Debug\super-bowl-project.pdb
