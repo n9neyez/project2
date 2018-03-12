@@ -49,11 +49,12 @@ namespace super_bowl_project
             City = city;
             State = state;
         }
-        /*
+        
         public override string ToString()
         {
-            return String.Format($"Account Number: {Date} \nFirst Name: {SuperBowlNum} \nLast Name: {Attendance} \nAccount Balance: {QBWinner} \nDate Account Created: {CoachWinner} \n\n");
+            return String.Format("{0, -30} {1, -20} {2, -35} {3, -35} {4, -25} {5, -25}\n",
+                "Winner: " + Winner, "Year: " + Date, "QB Winner: " + QBWinner, "Coach Winner: " + CoachWinner, "MVP: " + MVP, "Points: " + WinningPoints + " vs " + LosingPoints);
         }
-        */
+        
     }
 }

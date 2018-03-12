@@ -1,0 +1,104 @@
+
+Team: Winner		Date: Date		 Winning QB: QB  Winner		 Winning Coach: Coach Winner		 MVP		Points: Winning Pts vs Losing Pts
+
+Team: Green Bay Packers		Date: 15-Jan-67		 Winning QB: Bart Starr		 Winning Coach: Vince Lombardi		 Bart Starr		Points: 35 vs 10
+
+Team: Green Bay Packers		Date: 14-Jan-68		 Winning QB: Bart Starr		 Winning Coach: Vince Lombardi		 Bart Starr		Points: 33 vs 14
+
+Team: New York Jets		Date: 12-Jan-69		 Winning QB: Joe Namath		 Winning Coach: Weeb Ewbank		 Joe Namath		Points: 16 vs 7
+
+Team: Kansas City Chiefs		Date: 11-Jan-70		 Winning QB: Len Dawson Mike Livingston		 Winning Coach: Hank Stram		 Len Dawson		Points: 23 vs 7
+
+Team: Baltimore Colts		Date: 17-Jan-71		 Winning QB: Earl Morrall Johnny Unitas		 Winning Coach: Don McCafferty		 Chuck Howley		Points: 16 vs 13
+
+Team: Dallas Cowboys		Date: 16-Jan-72		 Winning QB: Roger Staubach		 Winning Coach: Tom Landry		 Roger Staubach		Points: 24 vs 3
+
+Team: Miami Dolphins		Date: 14-Jan-73		 Winning QB: Bob Griese		 Winning Coach: Don Shula		 Jake Scott		Points: 14 vs 7
+
+Team: Miami Dolphins		Date: 13-Jan-74		 Winning QB: Bob Griese		 Winning Coach: Don Shula		 Larry Csonka		Points: 24 vs 7
+
+Team: Pittsburgh Steelers		Date: 12-Jan-75		 Winning QB: Terry Bradshaw		 Winning Coach: Chuck Noll 		 Franco Harris		Points: 16 vs 6
+
+Team: Pittsburgh Steelers		Date: 18-Jan-76		 Winning QB: Terry Bradshaw		 Winning Coach: Chuck Noll 		 Lynn Swann		Points: 21 vs 17
+
+Team: Oakland Raiders		Date: 9-Jan-77		 Winning QB: Kenny Stabler		 Winning Coach: John Madden		 Fred Biletnikoff		Points: 32 vs 14
+
+Team: Dallas Cowboys		Date: 15-Jan-78		 Winning QB: Roger Staubach		 Winning Coach: Tom Landry		 Harvey Martin Randy White		Points: 27 vs 10
+
+Team: Pittsburgh Steelers		Date: 21-Jan-79		 Winning QB: Terry Bradshaw		 Winning Coach: Chuck Noll		 Terry Bradshaw		Points: 35 vs 31
+
+Team: Pittsburgh Steelers		Date: 20-Jan-80		 Winning QB: Terry Bradshaw		 Winning Coach: Chuck Noll		 Terry Bradshaw		Points: 31 vs 19
+
+Team: Oakland Raiders		Date: 25-Jan-81		 Winning QB: Jim Plunkett		 Winning Coach: Tom Flores		 Jim Plunkett		Points: 27 vs 10
+
+Team: San Francisco 49ers		Date: 24-Jan-82		 Winning QB: Joe Montana		 Winning Coach: Bill Walsh		 Joe Montana		Points: 26 vs 21
+
+Team: Washington Redskins		Date: 30-Jan-83		 Winning QB: Joe Theismann		 Winning Coach: Joe Gibbs		 John Riggins		Points: 27 vs 17
+
+Team: Los Angeles Raiders		Date: 22-Jan-84		 Winning QB: Jim Plunkett		 Winning Coach: Tom Flores		 Marcus Allen		Points: 38 vs 9
+
+Team: San Francisco 49ers		Date: 20-Jan-85		 Winning QB: Joe Montano		 Winning Coach: Bill Walsh		 Joe Montana		Points: 38 vs 16
+
+Team: Chicago Bears		Date: 26-Jan-86		 Winning QB: Jim McMahon		 Winning Coach: Mike Ditka		 Richard Dent		Points: 46 vs 10
+
+Team: New York Giants		Date: 25-Jan-87		 Winning QB: Phil Simms		 Winning Coach: Bill Parcells		 Phil Simms		Points: 39 vs 20
+
+Team: Washington Redskins		Date: 31-Jan-88		 Winning QB: Doug Williams		 Winning Coach: Joe Gibbs		 Doug Williams		Points: 42 vs 10
+
+Team: San Francisco 49ers		Date: 22-Jan-89		 Winning QB: Joe Montana		 Winning Coach: Bill Walsh		 Jerry Rice		Points: 20 vs 16
+
+Team: San Francisco 49ers		Date: 28-Jan-90		 Winning QB: Joe Montana		 Winning Coach: George Seifert		 Joe Montana		Points: 55 vs 10
+
+Team: New York Giants		Date: 27-Jan-91		 Winning QB: Jeff Hostetler		 Winning Coach: Bill Parcells		 Ottis Anderson		Points: 20 vs 19
+
+Team: Washington Redskins		Date: 26-Jan-92		 Winning QB: Mark Rypien		 Winning Coach: Joe Gibbs		 Mark Rypien		Points: 37 vs 24
+
+Team: Dallas Cowboys		Date: 31-Jan-93		 Winning QB: Troy Aikman		 Winning Coach: Jimmy Johnson		 Troy Aikman		Points: 52 vs 17
+
+Team: Dallas Cowboys		Date: 30-Jan-94		 Winning QB: Troy Aikman		 Winning Coach: Jimmy Johnson		 Emmitt Smith		Points: 30 vs 13
+
+Team: San Francisco 49ers		Date: 29-Jan-95		 Winning QB: Steve Young		 Winning Coach: George Seifert		 Steve Young		Points: 49 vs 26
+
+Team: Dallas Cowboys		Date: 28-Jan-96		 Winning QB: Troy Aikman		 Winning Coach: Barry Switzer		 Larry Brown		Points: 27 vs 17
+
+Team: Green Bay Packers		Date: 26-Jan-97		 Winning QB: Brett Favre		 Winning Coach: Mike Holmgren		 Desmond Howard		Points: 35 vs 21
+
+Team: Denver Broncos		Date: 25-Jan-98		 Winning QB: John Elway		 Winning Coach: Mike Shanahan		 Terrell Davis		Points: 31 vs 24
+
+Team: Denver Broncos		Date: 31-Jan-99		 Winning QB: John Elway		 Winning Coach: Mike Shanahan		 John Elway		Points: 34 vs 19
+
+Team: St. Louis Rams		Date: 30-Jan-00		 Winning QB: Kurt Warner		 Winning Coach: Dick Vermeil		 Kurt Warner		Points: 23 vs 16
+
+Team: Baltimore Ravens		Date: 28-Jan-01		 Winning QB: Trent Dilfer		 Winning Coach: Brian Billick		 Ray Lewis		Points: 34 vs 7
+
+Team: New England Patriots		Date: 3-Feb-02		 Winning QB: Tom Brady		 Winning Coach: Bill Belichick		 Tom Brady		Points: 20 vs 17
+
+Team: Tampa Bay Buccaneers		Date: 26-Jan-03		 Winning QB: Brad Johnson		 Winning Coach: Jon Gruden		 Dexter Jackson		Points: 48 vs 21
+
+Team: New England Patriots		Date: 1-Feb-04		 Winning QB: Tom Brady		 Winning Coach: Bill Belichick		 Tom Brady		Points: 32 vs 29
+
+Team: New England Patriots		Date: 6-Feb-05		 Winning QB: Tom Brady		 Winning Coach: Bill Belichick		 Deion Branch		Points: 24 vs 21
+
+Team: Pittsburgh Steelers		Date: 5-Feb-06		 Winning QB: Ben Roethlisberger		 Winning Coach: Bill Cowher		 Hines Ward		Points: 21 vs 10
+
+Team: Indianapolis Colts		Date: 4-Feb-07		 Winning QB: Peyton Manning		 Winning Coach: Tony Dungy		 Peyton Manning		Points: 29 vs 17
+
+Team: New York Giants		Date: 3-Feb-08		 Winning QB: Eli Manning		 Winning Coach: Tom Coughlin		 Eli Manning		Points: 17 vs 14
+
+Team: Pittsburgh Steelers		Date: 1-Feb-09		 Winning QB: Ben Roethlisberger		 Winning Coach: Mike Tomlin		 Santonio Holmes		Points: 27 vs 23
+
+Team: New Orleans Saints		Date: 7-Feb-10		 Winning QB: Drew Brees		 Winning Coach: Sean Payton		 Drew Brees		Points: 31 vs 17
+
+Team: Green Bay Packers		Date: 6-Feb-11		 Winning QB: Aaron Rodgers		 Winning Coach: Mike McCarthy		 Aaron Rodgers		Points: 31 vs 25
+
+Team: New York Giants		Date: 5-Feb-12		 Winning QB: Eli Manning		 Winning Coach: Tom Coughlin		 Eli Manning		Points: 21 vs 17
+
+Team: Baltimore Ravens		Date: 3-Feb-13		 Winning QB: Joe Flacco		 Winning Coach: John Harbaugh		 Joe Flacco		Points: 34 vs 31
+
+Team: Seattle Seahawks		Date: 2-Feb-14		 Winning QB: Russell Wilson		 Winning Coach: Pete Carroll		 Malcolm Smith		Points: 43 vs 8
+
+Team: New England Patriots		Date: 1-Feb-15		 Winning QB: Tom Brady		 Winning Coach: Bill Belichick		 Tom Brady		Points: 28 vs 24
+
+Team: Denver Broncos		Date: 7-Feb-16		 Winning QB: Peyton Manning		 Winning Coach: Gary Kubiak		 Von Miller		Points: 24 vs 10
+
+Team: New England Patriots		Date: 5-Feb-17		 Winning QB: Tom Brady		 Winning Coach: Bill Belichick		 Tom Brady		Points: 34 vs 28

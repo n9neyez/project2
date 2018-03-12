@@ -1,52 +1,104 @@
-Date,SB,Winner
-15-Jan-67,I,Green Bay Packers
-14-Jan-68,II,Green Bay Packers
-12-Jan-69,III,New York Jets
-11-Jan-70,IV,Kansas City Chiefs
-17-Jan-71,V,Baltimore Colts
-16-Jan-72,VI,Dallas Cowboys
-14-Jan-73,VII,Miami Dolphins
-13-Jan-74,VIII,Miami Dolphins
-12-Jan-75,IX,Pittsburgh Steelers
-18-Jan-76,X,Pittsburgh Steelers
-9-Jan-77,XI,Oakland Raiders
-15-Jan-78,XII,Dallas Cowboys
-21-Jan-79,XIII,Pittsburgh Steelers
-20-Jan-80,XIV,Pittsburgh Steelers
-25-Jan-81,XV,Oakland Raiders
-24-Jan-82,XVI,San Francisco 49ers
-30-Jan-83,XVII,Washington Redskins
-22-Jan-84,XVIII,Los Angeles Raiders
-20-Jan-85,XIX,San Francisco 49ers
-26-Jan-86,XX,Chicago Bears
-25-Jan-87,XXI,New York Giants
-31-Jan-88,XXII,Washington Redskins
-22-Jan-89,XXIII,San Francisco 49ers
-28-Jan-90,XXIV,San Francisco 49ers
-27-Jan-91,XXV,New York Giants
-26-Jan-92,XXVI,Washington Redskins
-31-Jan-93,XXVII,Dallas Cowboys
-30-Jan-94,XXVIII,Dallas Cowboys
-29-Jan-95,XXIX,San Francisco 49ers
-28-Jan-96,XXX,Dallas Cowboys
-26-Jan-97,XXXI,Green Bay Packers
-25-Jan-98,XXXII,Denver Broncos
-31-Jan-99,XXXIII,Denver Broncos
-30-Jan-00,XXXIV,St. Louis Rams
-28-Jan-01,XXXV,Baltimore Ravens
-3-Feb-02,XXXVI,New England Patriots
-26-Jan-03,XXXVII,Tampa Bay Buccaneers
-1-Feb-04,XXXVIII,New England Patriots
-6-Feb-05,XXXIX,New England Patriots
-5-Feb-06,XL,Pittsburgh Steelers
-4-Feb-07,XLI,Indianapolis Colts
-3-Feb-08,XLII,New York Giants
-1-Feb-09,XLIII,Pittsburgh Steelers
-7-Feb-10,XLIV,New Orleans Saints
-6-Feb-11,XLV,Green Bay Packers
-5-Feb-12,XLVI,New York Giants
-3-Feb-13,XLVII,Baltimore Ravens
-2-Feb-14,XLVIII,Seattle Seahawks
-1-Feb-15,XLIX,New England Patriots
-7-Feb-16,L ,Denver Broncos
-5-Feb-17,LI ,New England Patriots
+Winner: Winner                 Year: Date           QB Winner: QB  Winner               Coach Winner: Coach Winner          MVP: MVP                  Points: Winning Pts vs Losing Pts
+
+Winner: Green Bay Packers      Year: 15-Jan-67      QB Winner: Bart Starr               Coach Winner: Vince Lombardi        MVP: Bart Starr           Points: 35 vs 10         
+
+Winner: Green Bay Packers      Year: 14-Jan-68      QB Winner: Bart Starr               Coach Winner: Vince Lombardi        MVP: Bart Starr           Points: 33 vs 14         
+
+Winner: New York Jets          Year: 12-Jan-69      QB Winner: Joe Namath               Coach Winner: Weeb Ewbank           MVP: Joe Namath           Points: 16 vs 7          
+
+Winner: Kansas City Chiefs     Year: 11-Jan-70      QB Winner: Len Dawson Mike Livingston Coach Winner: Hank Stram            MVP: Len Dawson           Points: 23 vs 7          
+
+Winner: Baltimore Colts        Year: 17-Jan-71      QB Winner: Earl Morrall Johnny Unitas Coach Winner: Don McCafferty        MVP: Chuck Howley         Points: 16 vs 13         
+
+Winner: Dallas Cowboys         Year: 16-Jan-72      QB Winner: Roger Staubach           Coach Winner: Tom Landry            MVP: Roger Staubach       Points: 24 vs 3          
+
+Winner: Miami Dolphins         Year: 14-Jan-73      QB Winner: Bob Griese               Coach Winner: Don Shula             MVP: Jake Scott           Points: 14 vs 7          
+
+Winner: Miami Dolphins         Year: 13-Jan-74      QB Winner: Bob Griese               Coach Winner: Don Shula             MVP: Larry Csonka         Points: 24 vs 7          
+
+Winner: Pittsburgh Steelers    Year: 12-Jan-75      QB Winner: Terry Bradshaw           Coach Winner: Chuck Noll            MVP: Franco Harris        Points: 16 vs 6          
+
+Winner: Pittsburgh Steelers    Year: 18-Jan-76      QB Winner: Terry Bradshaw           Coach Winner: Chuck Noll            MVP: Lynn Swann           Points: 21 vs 17         
+
+Winner: Oakland Raiders        Year: 9-Jan-77       QB Winner: Kenny Stabler            Coach Winner: John Madden           MVP: Fred Biletnikoff     Points: 32 vs 14         
+
+Winner: Dallas Cowboys         Year: 15-Jan-78      QB Winner: Roger Staubach           Coach Winner: Tom Landry            MVP: Harvey Martin Randy White Points: 27 vs 10         
+
+Winner: Pittsburgh Steelers    Year: 21-Jan-79      QB Winner: Terry Bradshaw           Coach Winner: Chuck Noll            MVP: Terry Bradshaw       Points: 35 vs 31         
+
+Winner: Pittsburgh Steelers    Year: 20-Jan-80      QB Winner: Terry Bradshaw           Coach Winner: Chuck Noll            MVP: Terry Bradshaw       Points: 31 vs 19         
+
+Winner: Oakland Raiders        Year: 25-Jan-81      QB Winner: Jim Plunkett             Coach Winner: Tom Flores            MVP: Jim Plunkett         Points: 27 vs 10         
+
+Winner: San Francisco 49ers    Year: 24-Jan-82      QB Winner: Joe Montana              Coach Winner: Bill Walsh            MVP: Joe Montana          Points: 26 vs 21         
+
+Winner: Washington Redskins    Year: 30-Jan-83      QB Winner: Joe Theismann            Coach Winner: Joe Gibbs             MVP: John Riggins         Points: 27 vs 17         
+
+Winner: Los Angeles Raiders    Year: 22-Jan-84      QB Winner: Jim Plunkett             Coach Winner: Tom Flores            MVP: Marcus Allen         Points: 38 vs 9          
+
+Winner: San Francisco 49ers    Year: 20-Jan-85      QB Winner: Joe Montano              Coach Winner: Bill Walsh            MVP: Joe Montana          Points: 38 vs 16         
+
+Winner: Chicago Bears          Year: 26-Jan-86      QB Winner: Jim McMahon              Coach Winner: Mike Ditka            MVP: Richard Dent         Points: 46 vs 10         
+
+Winner: New York Giants        Year: 25-Jan-87      QB Winner: Phil Simms               Coach Winner: Bill Parcells         MVP: Phil Simms           Points: 39 vs 20         
+
+Winner: Washington Redskins    Year: 31-Jan-88      QB Winner: Doug Williams            Coach Winner: Joe Gibbs             MVP: Doug Williams        Points: 42 vs 10         
+
+Winner: San Francisco 49ers    Year: 22-Jan-89      QB Winner: Joe Montana              Coach Winner: Bill Walsh            MVP: Jerry Rice           Points: 20 vs 16         
+
+Winner: San Francisco 49ers    Year: 28-Jan-90      QB Winner: Joe Montana              Coach Winner: George Seifert        MVP: Joe Montana          Points: 55 vs 10         
+
+Winner: New York Giants        Year: 27-Jan-91      QB Winner: Jeff Hostetler           Coach Winner: Bill Parcells         MVP: Ottis Anderson       Points: 20 vs 19         
+
+Winner: Washington Redskins    Year: 26-Jan-92      QB Winner: Mark Rypien              Coach Winner: Joe Gibbs             MVP: Mark Rypien          Points: 37 vs 24         
+
+Winner: Dallas Cowboys         Year: 31-Jan-93      QB Winner: Troy Aikman              Coach Winner: Jimmy Johnson         MVP: Troy Aikman          Points: 52 vs 17         
+
+Winner: Dallas Cowboys         Year: 30-Jan-94      QB Winner: Troy Aikman              Coach Winner: Jimmy Johnson         MVP: Emmitt Smith         Points: 30 vs 13         
+
+Winner: San Francisco 49ers    Year: 29-Jan-95      QB Winner: Steve Young              Coach Winner: George Seifert        MVP: Steve Young          Points: 49 vs 26         
+
+Winner: Dallas Cowboys         Year: 28-Jan-96      QB Winner: Troy Aikman              Coach Winner: Barry Switzer         MVP: Larry Brown          Points: 27 vs 17         
+
+Winner: Green Bay Packers      Year: 26-Jan-97      QB Winner: Brett Favre              Coach Winner: Mike Holmgren         MVP: Desmond Howard       Points: 35 vs 21         
+
+Winner: Denver Broncos         Year: 25-Jan-98      QB Winner: John Elway               Coach Winner: Mike Shanahan         MVP: Terrell Davis        Points: 31 vs 24         
+
+Winner: Denver Broncos         Year: 31-Jan-99      QB Winner: John Elway               Coach Winner: Mike Shanahan         MVP: John Elway           Points: 34 vs 19         
+
+Winner: St. Louis Rams         Year: 30-Jan-00      QB Winner: Kurt Warner              Coach Winner: Dick Vermeil          MVP: Kurt Warner          Points: 23 vs 16         
+
+Winner: Baltimore Ravens       Year: 28-Jan-01      QB Winner: Trent Dilfer             Coach Winner: Brian Billick         MVP: Ray Lewis            Points: 34 vs 7          
+
+Winner: New England Patriots   Year: 3-Feb-02       QB Winner: Tom Brady                Coach Winner: Bill Belichick        MVP: Tom Brady            Points: 20 vs 17         
+
+Winner: Tampa Bay Buccaneers   Year: 26-Jan-03      QB Winner: Brad Johnson             Coach Winner: Jon Gruden            MVP: Dexter Jackson       Points: 48 vs 21         
+
+Winner: New England Patriots   Year: 1-Feb-04       QB Winner: Tom Brady                Coach Winner: Bill Belichick        MVP: Tom Brady            Points: 32 vs 29         
+
+Winner: New England Patriots   Year: 6-Feb-05       QB Winner: Tom Brady                Coach Winner: Bill Belichick        MVP: Deion Branch         Points: 24 vs 21         
+
+Winner: Pittsburgh Steelers    Year: 5-Feb-06       QB Winner: Ben Roethlisberger       Coach Winner: Bill Cowher           MVP: Hines Ward           Points: 21 vs 10         
+
+Winner: Indianapolis Colts     Year: 4-Feb-07       QB Winner: Peyton Manning           Coach Winner: Tony Dungy            MVP: Peyton Manning       Points: 29 vs 17         
+
+Winner: New York Giants        Year: 3-Feb-08       QB Winner: Eli Manning              Coach Winner: Tom Coughlin          MVP: Eli Manning          Points: 17 vs 14         
+
+Winner: Pittsburgh Steelers    Year: 1-Feb-09       QB Winner: Ben Roethlisberger       Coach Winner: Mike Tomlin           MVP: Santonio Holmes      Points: 27 vs 23         
+
+Winner: New Orleans Saints     Year: 7-Feb-10       QB Winner: Drew Brees               Coach Winner: Sean Payton           MVP: Drew Brees           Points: 31 vs 17         
+
+Winner: Green Bay Packers      Year: 6-Feb-11       QB Winner: Aaron Rodgers            Coach Winner: Mike McCarthy         MVP: Aaron Rodgers        Points: 31 vs 25         
+
+Winner: New York Giants        Year: 5-Feb-12       QB Winner: Eli Manning              Coach Winner: Tom Coughlin          MVP: Eli Manning          Points: 21 vs 17         
+
+Winner: Baltimore Ravens       Year: 3-Feb-13       QB Winner: Joe Flacco               Coach Winner: John Harbaugh         MVP: Joe Flacco           Points: 34 vs 31         
+
+Winner: Seattle Seahawks       Year: 2-Feb-14       QB Winner: Russell Wilson           Coach Winner: Pete Carroll          MVP: Malcolm Smith        Points: 43 vs 8          
+
+Winner: New England Patriots   Year: 1-Feb-15       QB Winner: Tom Brady                Coach Winner: Bill Belichick        MVP: Tom Brady            Points: 28 vs 24         
+
+Winner: Denver Broncos         Year: 7-Feb-16       QB Winner: Peyton Manning           Coach Winner: Gary Kubiak           MVP: Von Miller           Points: 24 vs 10         
+
+Winner: New England Patriots   Year: 5-Feb-17       QB Winner: Tom Brady                Coach Winner: Bill Belichick        MVP: Tom Brady            Points: 34 vs 28         
+

@@ -16,12 +16,12 @@ namespace super_bowl_project
             const string SUPERFILEPATH = @"C:\schooldata\semester3\AdvancedProgramming\Project-2\Project2\super-bowl-project\super-bowl-project\Super_Bowl_Project.csv";
             const char DELIM = ',';
             string[] arrayOfFields;
-            string filePath;
+            string filePath; // where new file will be created
 
             welcome(out filePath); //out filePath
 
-            try
-            {
+            //try
+            //{
                 FileStream superbowlFile = new FileStream(SUPERFILEPATH, FileMode.Open, FileAccess.Read);
                 StreamReader read = new StreamReader(superbowlFile);
 
@@ -35,23 +35,26 @@ namespace super_bowl_project
                                                arrayOfFields[5], arrayOfFields[6], arrayOfFields[7], arrayOfFields[8], arrayOfFields[9],
                                                arrayOfFields[10], arrayOfFields[11], arrayOfFields[12], arrayOfFields[13], arrayOfFields[14]);
                                                         // each field corresponds to a property within the SuperBowl class respectively
-                    // Console.WriteLine(aSuperBowl);
+                    Console.WriteLine(aSuperBowl);
                     superBowls.Add(aSuperBowl);
-
-
-
-                    writer.WriteLine(aSuperBowl.Date + DELIM + aSuperBowl.SuperBowlNum + DELIM + aSuperBowl.Winner);
-
+                    
+                    
+                    
                 }
                 writer.Close();
                 outFile.Close();
                 read.Close();
                 superbowlFile.Close();
-            }
+
+            findSuperBowlWinners(superBowls, filePath);
+            //}
+            /*
             catch(Exception e)
             {
                 Console.WriteLine(e.Message);
             }
+            */
+
 
 
         }
@@ -77,7 +80,39 @@ namespace super_bowl_project
                               "\nWhat is the average attendance of all Super Bowls?");
             Console.WriteLine("\nPlease enter in the desired file path, include the file name after the last backslash: ");
             filePath = Console.ReadLine();
+            Console.WriteLine("\n A file will be created with data written to it.");
 
+        }
+
+        public static void findSuperBowlWinners(List<SuperBowl> superBowls, string filePath)
+        {
+            FileStream outFile = new FileStream(filePath, FileMode.Create, FileAccess.Write); // create new file
+            StreamWriter writer = new StreamWriter(outFile);
+
+            int listSize;
+            listSize = superBowls.Count;
+
+            /* NEVERMIND.. it was a syntax error
+            for (var x = 0; x < listSize; ++x)      // tried formatting this, but kept getting an error...
+            {
+                writer.WriteLine($"\nTeam: {superBowls[x].Winner}\t\tDate: {superBowls[x].Date}\t\t Winning QB: {superBowls[x].QBWinner}" +
+                    $"\t\t Winning Coach: {superBowls[x].CoachWinner}\t\t {superBowls[x].MVP}\t\tPoints: {superBowls[x].WinningPoints} vs {superBowls[x].LosingPoints}");
+            }
+            
+            for (var x = 0; x < listSize; ++x)      // tried formatting this, but kept getting an error...
+            {
+                writer.Write("{0, 0} {1, 25}\n", superBowls[x].Winner, superBowls[x].Date);
+            }
+            */
+            for (var x = 0; x < listSize; ++x)
+            {
+                writer.WriteLine("{0, -30} {1, -20} {2, -35} {3, -35} {4, -25} {5, -25}\n",
+                "Winner: " + superBowls[x].Winner, "Year: " + superBowls[x].Date, "QB Winner: " + superBowls[x].QBWinner, "Coach Winner: " + superBowls[x].CoachWinner, "MVP: " + superBowls[x].MVP, "Points: " + superBowls[x].WinningPoints + " vs " + superBowls[x].LosingPoints);
+            }
+            
+
+            writer.Close();
+            outFile.Close();
         }
     }
 }
