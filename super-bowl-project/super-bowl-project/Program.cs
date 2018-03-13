@@ -112,7 +112,7 @@ namespace super_bowl_project
 
             var topFive = (
                 from sb in superBowls
-                orderby sb.Date
+                orderby sb.Attendance
                 select new { sb.Date, sb.Winner, sb.Loser, sb.City, sb.State, sb.Stadium} ).Take(5);
 
             writer.WriteLine("\n\n\nTop 5 Attended: \n");
@@ -128,6 +128,11 @@ namespace super_bowl_project
 
             writer.Close();
             outFile.Close();
+        }
+
+        public static void mostSuperBowls(List<SuperBowl> superBowls, string filePath)
+        {
+
         }
     }
 }

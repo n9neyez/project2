@@ -109,14 +109,14 @@ Winner: New England Patriots   Year: 5-Feb-17       QB Winner: Tom Brady        
 
 Top 5 Attended: 
 
-Date: 11-Jan-70      Winner: Kansas City Chiefs     Loser: Minnesota Vikings       City: New Orleans    State: Louisiana     Stadium: Tulane Stadium
+Date: 25-Jan-87      Winner: New York Giants        Loser: Denver Broncos          City: Pasadena       State: California    Stadium: Rose Bowl
 
-Date: 12-Jan-69      Winner: New York Jets          Loser: Baltimore Colts         City: Miami          State: Florida       Stadium: Orange Bowl
+Date: 6-Feb-11       Winner: Green Bay Packers      Loser: Pittsburgh Steelers     City: Arlington      State: Texas         Stadium: Cowboys Stadium
 
-Date: 12-Jan-75      Winner: Pittsburgh Steelers    Loser: Minnesota Vikings       City: New Orleans    State: Louisiana     Stadium: Tulane Stadium
+Date: 9-Jan-77       Winner: Oakland Raiders        Loser: Minnesota Vikings       City: Pasadena       State: California    Stadium: Rose Bowl
 
-Date: 13-Jan-74      Winner: Miami Dolphins         Loser: Minnesota Vikings       City: Houston        State: Texas         Stadium: Rice Stadium
+Date: 30-Jan-83      Winner: Washington Redskins    Loser: Miami Dolphins          City: Pasadena       State: California    Stadium: Rose Bowl
 
-Date: 14-Jan-68      Winner: Green Bay Packers      Loser: Oakland Raiders         City: Miami          State: Florida       Stadium: Orange Bowl
+Date: 20-Jan-80      Winner: Pittsburgh Steelers    Loser: Los Angeles Rams        City: Pasadena       State: California    Stadium: Rose Bowl
 
 ---------------------------------------------------------------------------------------
