@@ -49,7 +49,7 @@ namespace super_bowl_project
             City = city;
             State = state;
         }
-        
+        // not needed
         public override string ToString()
         {
             return String.Format("{0, -30} {1, -20} {2, -35} {3, -35} {4, -25} {5, -25}\n",

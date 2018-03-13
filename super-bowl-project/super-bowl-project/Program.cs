@@ -35,7 +35,7 @@ namespace super_bowl_project
                                                arrayOfFields[5], arrayOfFields[6], arrayOfFields[7], arrayOfFields[8], arrayOfFields[9],
                                                arrayOfFields[10], arrayOfFields[11], arrayOfFields[12], arrayOfFields[13], arrayOfFields[14]);
                                                         // each field corresponds to a property within the SuperBowl class respectively
-                    Console.WriteLine(aSuperBowl);
+                    //Console.WriteLine(aSuperBowl);
                     superBowls.Add(aSuperBowl);
                     
                     
@@ -47,6 +47,7 @@ namespace super_bowl_project
                 superbowlFile.Close();
 
             findSuperBowlWinners(superBowls, filePath);
+            topFiveAttended(superBowls, filePath);
             //}
             /*
             catch(Exception e)
@@ -92,24 +93,38 @@ namespace super_bowl_project
             int listSize;
             listSize = superBowls.Count;
 
-            /* NEVERMIND.. it was a syntax error
-            for (var x = 0; x < listSize; ++x)      // tried formatting this, but kept getting an error...
-            {
-                writer.WriteLine($"\nTeam: {superBowls[x].Winner}\t\tDate: {superBowls[x].Date}\t\t Winning QB: {superBowls[x].QBWinner}" +
-                    $"\t\t Winning Coach: {superBowls[x].CoachWinner}\t\t {superBowls[x].MVP}\t\tPoints: {superBowls[x].WinningPoints} vs {superBowls[x].LosingPoints}");
-            }
-            
-            for (var x = 0; x < listSize; ++x)      // tried formatting this, but kept getting an error...
-            {
-                writer.Write("{0, 0} {1, 25}\n", superBowls[x].Winner, superBowls[x].Date);
-            }
-            */
+            writer.WriteLine("Super Bowl Winners: ");
             for (var x = 0; x < listSize; ++x)
             {
                 writer.WriteLine("{0, -30} {1, -20} {2, -35} {3, -35} {4, -25} {5, -25}\n",
                 "Winner: " + superBowls[x].Winner, "Year: " + superBowls[x].Date, "QB Winner: " + superBowls[x].QBWinner, "Coach Winner: " + superBowls[x].CoachWinner, "MVP: " + superBowls[x].MVP, "Points: " + superBowls[x].WinningPoints + " vs " + superBowls[x].LosingPoints);
             }
-            
+            writer.WriteLine("---------------------------------------------------------------------------------------");
+
+            writer.Close();
+            outFile.Close();
+        }
+
+        public static void topFiveAttended(List<SuperBowl> superBowls, string filePath)
+        {
+            FileStream outFile = new FileStream(filePath, FileMode.Append, FileAccess.Write); // create new file
+            StreamWriter writer = new StreamWriter(outFile);
+
+            var topFive = (
+                from sb in superBowls
+                orderby sb.Date
+                select new { sb.Date, sb.Winner, sb.Loser, sb.City, sb.State, sb.Stadium} ).Take(5);
+
+            writer.WriteLine("\n\n\nTop 5 Attended: \n");
+            foreach(var sb in topFive)
+            {
+                writer.WriteLine("{0, -20} {1, -30} {2, -30} {3, -20} {4, -20} {5, 0}\n",
+                    "Date: "+ sb.Date, "Winner: " + sb.Winner, "Loser: " + sb.Loser, "City: " + sb.City, "State: " + sb.State, "Stadium: " + sb.Stadium);
+
+                //writer.WriteLine($"Date: {sb.Date} \t {sb.Winner} \t {sb.Loser} \t {sb.City} \t {sb.State} \t {sb.Stadium} ");
+            }
+
+            writer.WriteLine("---------------------------------------------------------------------------------------");
 
             writer.Close();
             outFile.Close();
