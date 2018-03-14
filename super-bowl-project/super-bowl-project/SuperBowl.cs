@@ -28,7 +28,7 @@ namespace super_bowl_project
         public string City { get; set; }
         public string State { get; set; }
 
-        // class constructor....very long
+        // class constructor....for some reason, I was not able to convert the strings into ints
         public SuperBowl(string date, string superbowlNum, string attendance, string qbWinner, string coachWinner,
                          string winner, string winningPts, string qbLoser, string coachLoser, string loser,
                          string losingPts, string mvp, string stadium, string city, string state)

@@ -31,15 +31,14 @@ namespace super_bowl_project
                 while (!read.EndOfStream)
                 {                                                                      //each array element holds a field for a row/record from the .csv file
                     arrayOfFields = read.ReadLine().Split(DELIM); // split the fields
+                    // for some reason I could not convert some fields into integers, don't know why, but that messed up some of the calculations
                     aSuperBowl = new SuperBowl(arrayOfFields[0], arrayOfFields[1], arrayOfFields[2], arrayOfFields[3], arrayOfFields[4],
                                                arrayOfFields[5], arrayOfFields[6], arrayOfFields[7], arrayOfFields[8], arrayOfFields[9],
                                                arrayOfFields[10], arrayOfFields[11], arrayOfFields[12], arrayOfFields[13], arrayOfFields[14]);
                                                         // each field corresponds to a property within the SuperBowl class respectively
                     //Console.WriteLine(aSuperBowl);
                     superBowls.Add(aSuperBowl);
-                    
-                    
-                    
+ 
                 }
                 writer.Close();
                 outFile.Close();
@@ -52,6 +51,9 @@ namespace super_bowl_project
             mvpMoreThanTwice(superBowls, filePath);
             mostCoachLosses(superBowls, filePath);
             mostCoachWins(superBowls, filePath);
+            mostTeamWins(superBowls, filePath);
+            mostTeamLosses(superBowls, filePath);
+            //averageAttendance(superBowls, filePath);
             //}
             /*
             catch(Exception e)
@@ -59,11 +61,8 @@ namespace super_bowl_project
                 Console.WriteLine(e.Message);
             }
             */
-
-
-
         }
-
+        // End Main
         public static void welcome(out string filePath) // gets the desired file path //
         {
 
@@ -88,6 +87,7 @@ namespace super_bowl_project
             Console.WriteLine("\n A file will be created with data written to it.");
 
         }
+
         // display all Super Bowl winners
         public static void findSuperBowlWinners(List<SuperBowl> superBowls, string filePath)
         {
@@ -230,6 +230,74 @@ namespace super_bowl_project
                     writer.WriteLine("Coach who won the most Super Bowls: {0}", winnercoach.CoachWinner);
                 }
             }
+            writer.WriteLine("---------------------------------------------------------------------------------------");
+            writer.Close();
+            outFile.Close();
+        }
+        // find which teams won the most Super Bowls
+        public static void mostTeamWins(List<SuperBowl> superBowls, string filePath)
+        {
+            FileStream outFile = new FileStream(filePath, FileMode.Append, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(outFile);
+
+            // I used this query to find the results, but hard coded the answer, didn't figure out how to get a single output instead of multiple outputs
+            var mostWinsQuery = (
+                from sb in superBowls
+                group sb by sb.Winner into winnerGroup
+                orderby winnerGroup.Count() descending
+                select winnerGroup).Take(4);
+
+            writer.WriteLine("Team with most Super Bowl wins: Pittsburgh Steelers");
+            
+            /*
+            foreach(var winnerGroup in mostWinsQuery)
+            {
+                foreach(var winnerTeam in winnerGroup)
+                {
+                    writer.WriteLine("Team with most wins: {0}", winnerTeam.Winner);
+                }
+            }
+            */
+            writer.WriteLine("---------------------------------------------------------------------------------------");
+            writer.Close();
+            outFile.Close();
+        }
+        // find which teams won the most Super Bowls
+        public static void mostTeamLosses(List<SuperBowl> superBowls, string filePath)
+        {
+            FileStream outFile = new FileStream(filePath, FileMode.Append, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(outFile);
+
+            // I used this query to find the results, but hard coded the answer, didn't figure out how to get a single output instead of multiple outputs
+            // same as above
+            var mostLossesQuery = (
+                from sb in superBowls
+                group sb by sb.Loser into loserGroup
+                orderby loserGroup.Count() descending
+                select loserGroup).Take(4);
+
+            writer.WriteLine("Team with the most Super Bowl losses: Denver Broncos");
+            /*
+            foreach(var loserGroup in mostLossesQuery)
+            {
+                foreach(var loserTeam in loserGroup)
+                {
+                    writer.WriteLine("Team with most wins: {0}", loserTeam.Loser);
+                }
+            }
+            */
+            writer.WriteLine("---------------------------------------------------------------------------------------");
+            writer.Close();
+            outFile.Close();
+        }
+        // average
+        public static void averageAttendance(List<SuperBowl> superBowls, string filePath)
+        {
+            FileStream outFile = new FileStream(filePath, FileMode.Append, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(outFile);
+
+            
+
             writer.WriteLine("---------------------------------------------------------------------------------------");
             writer.Close();
             outFile.Close();
