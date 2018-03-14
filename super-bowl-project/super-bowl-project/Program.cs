@@ -48,7 +48,7 @@ namespace super_bowl_project
 
             findSuperBowlWinners(superBowls, filePath);
             topFiveAttended(superBowls, filePath);
-            //mostSuperBowls(superBowls, filePath);
+            mostSuperBowls(superBowls, filePath);
             mvpMoreThanTwice(superBowls, filePath);
             //}
             /*
@@ -86,7 +86,7 @@ namespace super_bowl_project
             Console.WriteLine("\n A file will be created with data written to it.");
 
         }
-
+        // display all Super Bowl winners
         public static void findSuperBowlWinners(List<SuperBowl> superBowls, string filePath)
         {
             FileStream outFile = new FileStream(filePath, FileMode.Create, FileAccess.Write); // create new file
@@ -106,7 +106,7 @@ namespace super_bowl_project
             writer.Close();
             outFile.Close();
         }
-
+        // find top 5 attended Super Bowls
         public static void topFiveAttended(List<SuperBowl> superBowls, string filePath)
         {
             FileStream outFile = new FileStream(filePath, FileMode.Append, FileAccess.Write); // add top 5 to file
@@ -131,13 +131,26 @@ namespace super_bowl_project
             writer.Close();
             outFile.Close();
         }
-        // find which states hosted the most Super Bowls.. not complete
+        // find which states hosted the most Super Bowls.. not sure if the query is correct...
         public static void mostSuperBowls(List<SuperBowl> superBowls, string filePath)
         {
             FileStream outFile = new FileStream(filePath, FileMode.Append, FileAccess.Write); // add most super bowls to file
             StreamWriter writer = new StreamWriter(outFile);
 
-            
+            var mostSuperQuery = (
+                from sb in superBowls
+                group sb by sb.State into mostGroup
+                orderby mostGroup.Count() descending
+                select mostGroup).Take(3);
+
+            writer.WriteLine("States that hosted the most Super Bowls (Top 3 states): ");
+            foreach(var mostGroup in mostSuperQuery)
+            {
+                foreach (var state in mostGroup)
+                {
+                    writer.WriteLine("{0, -30} {1, -40} {2, -40}", "City: " + state.City, "State: " + state.State, "Stadium: " + state.Stadium);
+                }
+            }
 
             writer.WriteLine("---------------------------------------------------------------------------------------");
 
@@ -150,19 +163,20 @@ namespace super_bowl_project
             FileStream outFile = new FileStream(filePath, FileMode.Append, FileAccess.Write); 
             StreamWriter writer = new StreamWriter(outFile);
 
-            var mvp = (
+            var mvpQuery = (
                 from sb in superBowls
-                //where sb.MVP.Count() > 2
-                orderby sb.MVP
-                select new { sb.MVP, sb.Winner, sb.Loser});
-
-
+                group sb by sb.MVP into mvpGroup
+                where mvpGroup.Count() > 2
+                orderby mvpGroup.Key
+                select mvpGroup );
 
             writer.WriteLine("\n\n\nPlayers who won MVP more than twice: \n");
-            foreach(var sb in mvp)
+            foreach(var mvpGroup in mvpQuery)
             {
-                writer.WriteLine("{0, -40} {1, -40} {2, -40}",
-                    "MVP: " + sb.MVP, "SB Winner: " + sb.Winner, "SB Loser: " + sb.Loser);
+                foreach(var mvp in mvpGroup)
+                {
+                    writer.WriteLine("{0, -30} {1, -40} {2, -40}", "MVP: " + mvp.MVP, "SB Winner: " + mvp.Winner, "SB Loser: " + mvp.Loser);
+                }
             }
 
             writer.WriteLine("---------------------------------------------------------------------------------------");
