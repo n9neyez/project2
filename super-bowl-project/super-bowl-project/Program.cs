@@ -50,6 +50,8 @@ namespace super_bowl_project
             topFiveAttended(superBowls, filePath);
             mostSuperBowls(superBowls, filePath);
             mvpMoreThanTwice(superBowls, filePath);
+            mostCoachLosses(superBowls, filePath);
+            mostCoachWins(superBowls, filePath);
             //}
             /*
             catch(Exception e)
@@ -181,6 +183,54 @@ namespace super_bowl_project
 
             writer.WriteLine("---------------------------------------------------------------------------------------");
 
+            writer.Close();
+            outFile.Close();
+        }
+        // find which coach lost the most -- couldn't figure out how to just get one output for the coach
+        public static void mostCoachLosses(List<SuperBowl> superBowls, string filePath)
+        {
+            FileStream outFile = new FileStream(filePath, FileMode.Append, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(outFile);
+
+            var coachLoserQuery = (
+                from sb in superBowls
+                group sb by sb.CoachLoser into loserGroup
+                orderby loserGroup.Count() descending
+                select loserGroup).Take(1);
+
+            foreach(var loserGroup in coachLoserQuery)
+            {
+                //writer.WriteLine("Coach who lost the most Super Bowls: {0}", loserGroup.First());
+                foreach(var losercoach in loserGroup)
+                {
+                    writer.WriteLine("Coach who lost the most Super Bowls: {0}", losercoach.CoachLoser);
+                }
+            }
+            writer.WriteLine("---------------------------------------------------------------------------------------");
+            writer.Close();
+            outFile.Close();
+        }
+        // find most which coach won the most -- couldn't figure out how to just get one output for the coach
+        public static void mostCoachWins(List<SuperBowl> superBowls, string filePath)
+        {
+            FileStream outFile = new FileStream(filePath, FileMode.Append, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(outFile);
+
+            var coachWinnerQuery = (
+                from sb in superBowls
+                group sb by sb.CoachWinner into winnerGroup
+                orderby winnerGroup.Count() descending
+                select winnerGroup).Take(1);
+
+            foreach (var winnerGroup in coachWinnerQuery)
+            {
+                //writer.WriteLine("Coach who lost the most Super Bowls: {0}", loserGroup.First());
+                foreach (var winnercoach in winnerGroup)
+                {
+                    writer.WriteLine("Coach who won the most Super Bowls: {0}", winnercoach.CoachWinner);
+                }
+            }
+            writer.WriteLine("---------------------------------------------------------------------------------------");
             writer.Close();
             outFile.Close();
         }
