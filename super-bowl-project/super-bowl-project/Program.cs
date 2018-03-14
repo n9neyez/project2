@@ -48,6 +48,8 @@ namespace super_bowl_project
 
             findSuperBowlWinners(superBowls, filePath);
             topFiveAttended(superBowls, filePath);
+            //mostSuperBowls(superBowls, filePath);
+            mvpMoreThanTwice(superBowls, filePath);
             //}
             /*
             catch(Exception e)
@@ -107,7 +109,7 @@ namespace super_bowl_project
 
         public static void topFiveAttended(List<SuperBowl> superBowls, string filePath)
         {
-            FileStream outFile = new FileStream(filePath, FileMode.Append, FileAccess.Write); // create new file
+            FileStream outFile = new FileStream(filePath, FileMode.Append, FileAccess.Write); // add top 5 to file
             StreamWriter writer = new StreamWriter(outFile);
 
             var topFive = (
@@ -115,7 +117,7 @@ namespace super_bowl_project
                 orderby sb.Attendance
                 select new { sb.Date, sb.Winner, sb.Loser, sb.City, sb.State, sb.Stadium} ).Take(5);
 
-            writer.WriteLine("\n\n\nTop 5 Attended: \n");
+            writer.WriteLine("\n\n\nTop 5 Attended: \n\n");
             foreach(var sb in topFive)
             {
                 writer.WriteLine("{0, -20} {1, -30} {2, -30} {3, -20} {4, -20} {5, 0}\n",
@@ -129,10 +131,44 @@ namespace super_bowl_project
             writer.Close();
             outFile.Close();
         }
-
+        // find which states hosted the most Super Bowls.. not complete
         public static void mostSuperBowls(List<SuperBowl> superBowls, string filePath)
         {
+            FileStream outFile = new FileStream(filePath, FileMode.Append, FileAccess.Write); // add most super bowls to file
+            StreamWriter writer = new StreamWriter(outFile);
 
+            
+
+            writer.WriteLine("---------------------------------------------------------------------------------------");
+
+            writer.Close();
+            outFile.Close();
+        }
+        // find MVPs who won more than twice
+        public static void mvpMoreThanTwice(List<SuperBowl> superBowls, string filePath)
+        {
+            FileStream outFile = new FileStream(filePath, FileMode.Append, FileAccess.Write); 
+            StreamWriter writer = new StreamWriter(outFile);
+
+            var mvp = (
+                from sb in superBowls
+                //where sb.MVP.Count() > 2
+                orderby sb.MVP
+                select new { sb.MVP, sb.Winner, sb.Loser});
+
+
+
+            writer.WriteLine("\n\n\nPlayers who won MVP more than twice: \n");
+            foreach(var sb in mvp)
+            {
+                writer.WriteLine("{0, -40} {1, -40} {2, -40}",
+                    "MVP: " + sb.MVP, "SB Winner: " + sb.Winner, "SB Loser: " + sb.Loser);
+            }
+
+            writer.WriteLine("---------------------------------------------------------------------------------------");
+
+            writer.Close();
+            outFile.Close();
         }
     }
 }
